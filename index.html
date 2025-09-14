@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bus CV V1.0.0</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #020307;
+            height: 100vh;
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Monomaniac One', sans-serif;
+            color: white;
+        }
+
+        .topbar {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 1rem 2rem;
+            box-sizing: border-box;
+        }
+
+        .topbar * {
+            align-self: center;
+        }
+
+        .section {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .menu-bar {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .menu-bar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .menu-bar a:hover {
+            color: #01d5a2;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+        }
+
+        .social-bar {
+            display: flex;
+            gap: 15px;
+            justify-self: end;
+        }
+
+        .social-bar i {
+            font-size: 28px;
+            color: white;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        .social-bar i:hover {
+            color: #01d5a2;
+        }
+
+        .logo-bar {
+            display: inline;
+            text-align: center;
+        }
+
+        .logo-bar img {
+            height: 48px;
+        }
+
+        .title-section {
+            text-align: center;
+        }
+
+        .title-section .a-title {
+            font-size: 32px;
+            line-height: 20px;
+        }
+
+        .logo-profile {
+            border-radius: 100%;
+            margin-top: 20px;
+            border: 2px solid #01d5a2;
+            padding: 10px;
+        }
+
+        .logo-profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="menu-bar">
+                <a href="#">Portfolio</a>
+                <a href="#">About Me</a>
+                <a href="#">Get In Touch</a>
+            </div>
+            <div class="logo-bar">
+                <img src="./images/hello.svg" alt="">
+            </div>
+            <div class="social-bar">
+                <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="title-section">
+                <h1 class="a-title">Supanat Chantrapat</h1>
+                <h1 class="a-title" style="color: #01d5a2;">Freelance Web Developer</h1>
+                <h1 class="a-title">Based In THAILAND</h1>
+            </div>
+            <div class="logo-profile">
+                <img src="./images/profile.webp" alt="Profile">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
